@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Feedback</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container{
+            width: 50%;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px gray;
+            margin-top: 30px;
+        }
+        h2{
+            text-align: center;
+            color: #0077ff;
+        }
+        input, select, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid gray;
+        }
+        button{
+            background-color: #0077ff;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #005fcc;
+        }
+        #eventImage{
+            width: 250px;
+            border-radius: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        #charCount{
+            color: green;
+            font-weight: bold;
+        }
+        #feeDisplay{
+            color: darkblue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>⭐ Event Feedback Form</h2>
+        <label>Phone Number</label>
+        <input type="text"
+               id="phone"
+               placeholder="Enter phone number"
+               onblur="validatePhone()">
+        <label>Select Event</label>
+        <select onchange="showFee(this.value)">
+            <option value="">
+            <option value="500">Music Festival</option>
+
+<option value="300">Food Fair</option>
+<option value="400">Art Workshop</option>
+<option value="600">Dance Show</option>
+<option value="700">Sports Event</option>
+<option value="350">Book Fair</option>
+        </select>
+        <p id="feeDisplay"></p>
+        <label>Feedback</label>
+        <textarea id="feedback"
+                  rows="5"
+                  placeholder="Enter feedback"
+                  onkeyup="countCharacters()">
+        </textarea>
+        <p id="charCount">
+            Characters: 0
+        </p>
+        <button onclick="showConfirmation()">
+            Submit Feedback
+        </button>
+        <h3>Double Click Image to Enlarge</h3>
+        <img src="images/event1.jpeg"
+             id="eventImage"
+             ondblclick="enlargeImage()">
+    </div>
+    <script>
+        function validatePhone(){
+            let phone =
+            document.getElementById("phone").value;
+            if(phone.length != 10){
+                alert("❌ Phone number must contain 10 digits");
+            }
+        }
+        function showFee(value){
+            document.getElementById("feeDisplay").innerHTML =
+            "💰 Event Fee: ₹" + value;
+        }
+        function showConfirmation(){
+            alert("✅ Feedback Submitted Successfully!");
+        }
+        function enlargeImage(){
+            let img =
+            document.getElementById("eventImage");
+            img.style.width = "400px";
+        }
+        function countCharacters(){
+            let text =
+            document.getElementById("feedback").value;
+            document.getElementById("charCount").innerHTML =
+            "Characters: " + text.length;
+        }
+    </script>
+</body>
+</html>

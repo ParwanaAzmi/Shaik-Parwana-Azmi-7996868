@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Community Event Portal</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right,#dbeafe,#f0f9ff);
+            text-align: center;
+        }
+
+        nav{
+            background: linear-gradient(to right,#2563eb,#1e3a8a);
+            color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 10px gray;
+        }
+
+        nav h1{
+            margin: 0;
+            font-size: 35px;
+        }
+
+        section{
+            background-color: white;
+            width: 85%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        /* GALLERY */
+
+        .gallery img{
+            width: 250px;
+            height: 180px;
+            border-radius: 12px;
+            margin: 12px;
+            transition: 0.4s;
+            box-shadow: 0px 4px 10px gray;
+        }
+
+        .gallery img:hover{
+            transform: scale(1.08);
+        }
+
+        /* TABLE */
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th{
+            background-color: #2563eb;
+            color: white;
+        }
+
+        table,th,td{
+            border: 1px solid gray;
+        }
+
+        th,td{
+            padding: 14px;
+        }
+
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        /* FORM */
+
+        input,select,textarea{
+            width: 75%;
+            padding: 12px;
+            margin-top: 12px;
+            border-radius: 8px;
+            border: 1px solid gray;
+            font-size: 16px;
+        }
+
+        button{
+            margin-top: 18px;
+            padding: 14px 22px;
+            background: linear-gradient(to right,#2563eb,#1e40af);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            transform: scale(1.05);
+            background: linear-gradient(to right,#1e40af,#172554);
+        }
+
+        /* VIDEO */
+
+        video{
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px gray;
+            margin-top: 15px;
+        }
+
+        /* AUDIO */
+
+        audio{
+            margin-top: 20px;
+            width: 300px;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background-color: #1e3a8a;
+            color: white;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <h1>🎉 Community Event Portal</h1>
+
+    </nav>
+
+    <!-- HOME -->
+
+    <section>
+
+        <h2>Welcome to Our Events</h2>
+
+        <p>
+            Discover exciting events happening in your local community.
+        </p>
+
+    </section>
+
+    <!-- IMAGE GALLERY -->
+
+    <section>
+
+        <h2>📸 Event Gallery</h2>
+
+        <div class="gallery">
+
+            <img src="images/event1.jpeg"
+                 id="eventImage"
+                 ondblclick="enlargeImage()">
+
+            <img src="images/event2.jpeg">
+
+            <img src="images/event3.jpeg">
+
+        </div>
+
+    </section>
+
+    <!-- EVENT TABLE -->
+
+    <section>
+
+        <h2>📅 Upcoming Events</h2>
+
+        <table>
+
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+
+            <tr>
+                <td>Music Festival</td>
+                <td>10 June 2026</td>
+                <td>6 PM</td>
+            </tr>
+
+            <tr>
+                <td>Food Fair</td>
+                <td>15 June 2026</td>
+                <td>4 PM</td>
+            </tr>
+
+            <tr>
+                <td>Dance Workshop</td>
+                <td>20 June 2026</td>
+                <td>5 PM</td>
+            </tr>
+
+            <tr>
+                <td>Art Exhibition</td>
+                <td>22 June 2026</td>
+                <td>3 PM</td>
+            </tr>
+
+            <tr>
+                <td>Sports Meetup</td>
+                <td>25 June 2026</td>
+                <td>7 PM</td>
+            </tr>
+
+            <tr>
+                <td>Tech Seminar</td>
+                <td>28 June 2026</td>
+                <td>2 PM</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- REGISTRATION FORM -->
+
+    <section>
+
+        <h2>📝 Register for Event</h2>
+
+        <form>
+
+            <input type="text"
+                   placeholder="Enter Your Name">
+
+            <br>
+
+            <input type="email"
+                   placeholder="Enter Your Email">
+
+            <br>
+
+            <select>
+
+                <option>
+                    Select Event
+                </option>
+
+                <option>Music Festival</option>
+
+                <option>Food Fair</option>
+
+                <option>Dance Workshop</option>
+
+                <option>Art Exhibition</option>
+
+                <option>Sports Meetup</option>
+
+                <option>Tech Seminar</option>
+
+            </select>
+
+            <br>
+
+            <textarea rows="4"
+                      placeholder="Enter Message">
+            </textarea>
+
+            <br>
+
+            <button type="submit">
+                Register Now
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- VIDEO & AUDIO -->
+
+    <section>
+
+        <h2>🎬 Event Invitation</h2>
+
+        <video controls
+               autoplay
+               muted
+               width="700"
+               poster="images/event1.jpeg">
+
+            <source src="videos/invite.mp4"
+                    type="video/mp4">
+
+        </video>
+
+        <h2>🎵 Event Music</h2>
+
+        <audio controls>
+
+            <source src="audio/music.mp3"
+                    type="audio/mpeg">
+
+        </audio>
+
+    </section>
+
+    <!-- LOCAL STORAGE -->
+
+    <section>
+
+        <h2>⭐ Save Favorite Event</h2>
+
+        <select id="eventSelect">
+
+            <option>
+                -- Choose Event --
+            </option>
+
+            <option>Music Festival</option>
+
+            <option>Food Fair</option>
+
+            <option>Dance Workshop</option>
+
+            <option>Art Exhibition</option>
+
+            <option>Sports Meetup</option>
+
+            <option>Tech Seminar</option>
+
+        </select>
+
+        <br>
+
+        <button onclick="savePreference()">
+            Save Preference
+        </button>
+
+        <p id="savedResult"></p>
+
+    </section>
+
+    <!-- GEOLOCATION -->
+
+    <section>
+
+        <h2>📍 Find Nearby Events</h2>
+
+        <button onclick="findLocation()">
+            Find Nearby Events
+        </button>
+
+        <p id="locationResult"></p>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Community Event Portal
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        // IMAGE ENLARGE
+
+        function enlargeImage(){
+
+            let img =
+            document.getElementById("eventImage");
+
+            img.style.width = "400px";
+
+            img.style.height = "300px";
+        }
+
+        // LOCAL STORAGE
+
+        function savePreference(){
+
+            let selectedEvent =
+            document.getElementById("eventSelect").value;
+
+            localStorage.setItem(
+                "favoriteEvent",
+                selectedEvent
+            );
+
+            document.getElementById("savedResult").innerHTML =
+            "✅ Saved Event: " + selectedEvent;
+        }
+
+        window.onload = function(){
+
+            let savedEvent =
+            localStorage.getItem("favoriteEvent");
+
+            if(savedEvent){
+
+                document.getElementById("savedResult").innerHTML =
+                "⭐ Favorite Event: "
+                + savedEvent;
+            }
+        }
+
+        // GEOLOCATION
+
+        function findLocation(){
+
+            let output =
+            document.getElementById("locationResult");
+
+            if(navigator.geolocation){
+
+                output.innerHTML =
+                "⏳ Fetching Location...";
+
+                navigator.geolocation.getCurrentPosition(
+
+                    function(position){
+
+                        let latitude =
+                        position.coords.latitude;
+
+                        let longitude =
+                        position.coords.longitude;
+
+                        output.innerHTML =
+                        "✅ Latitude: "
+                        + latitude
+                        +
+                        "<br>✅ Longitude: "
+                        + longitude;
+                    },
+
+                    function(error){
+
+                        switch(error.code){
+
+                            case error.PERMISSION_DENIED:
+
+                                output.innerHTML =
+                                "❌ Permission Denied";
+                                break;
+
+                            case error.TIMEOUT:
+
+                                output.innerHTML =
+                                "⏰ Request Timed Out";
+                                break;
+
+                            default:
+
+                                output.innerHTML =
+                                "⚠️ Location Error";
+                        }
+                    },
+
+                    {
+                        enableHighAccuracy: true,
+                        timeout: 10000,
+                        maximumAge: 0
+                    }
+                );
+            }
+        }
+
+        // DEBUGGING
+
+        console.log(
+            "Community Event Portal Loaded Successfully"
+        );
+
+    </script>
+
+</body>
+
+</html>

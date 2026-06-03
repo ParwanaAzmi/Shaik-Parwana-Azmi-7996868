@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>User Preferences</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        .container{
+            background-color: white;
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px gray;
+        }
+        h1{
+            color: #0077ff;
+        }
+        select{
+            padding: 10px;
+            width: 60%;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        button{
+            margin-top: 20px;
+            padding: 12px 18px;
+            background-color: #0077ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #005fcc;
+        }
+        #result{
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⭐ Save Your Favorite Event</h1>
+        <p>Select your favorite community event:</p>
+        <select id="eventSelect">
+            <option value="">
+            </option>
+            <option>
+                Music Festival
+            </option>
+            <option>
+                Food Fair
+            </option>
+            <option>
+                Sports Event
+            </option>
+            <option>
+                Dance Workshop
+            </option>
+        </select>
+        <br>
+        <button onclick="savePreference()">
+            Save Preference
+        </button>
+        <p id="result"></p>
+    </div>
+    <script>
+        window.onload = function(){
+            let savedEvent =
+            localStorage.getItem("favoriteEvent");
+            if(savedEvent){
+                document.getElementById("result").innerHTML =
+                "✅ Your saved favorite event is: "
+                + savedEvent;
+            }
+        }
+        function savePreference(){
+            let selectedEvent =
+            document.getElementById("eventSelect").value;
+            localStorage.setItem(
+                "favoriteEvent",
+                selectedEvent
+            );
+            document.getElementById("result").innerHTML =
+            "✅ Preference Saved: " + selectedEvent;
+        }
+    </script>
+</body>
+</html>

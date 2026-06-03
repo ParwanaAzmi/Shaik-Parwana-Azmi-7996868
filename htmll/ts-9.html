@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Nearby Event Locator</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        .container{
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px gray;
+        }
+        h1{
+            color: #0077ff;
+        }
+        button{
+            padding: 12px 20px;
+            background-color: #0077ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover{
+            background-color: #005fcc;
+        }
+        #locationResult{
+            margin-top: 20px;
+            font-size: 18px;
+            color: darkgreen;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📍 Find Nearby Events</h1>
+        <p>
+            Click the button to get your current location.
+        </p>
+        <button onclick="findLocation()">
+            Find Nearby Events
+        </button>
+        <p id="locationResult"></p>
+    </div>
+    <script>
+        function findLocation(){
+            let output =
+            document.getElementById("locationResult");
+            if(navigator.geolocation){
+                output.innerHTML =
+                "⏳ Fetching location...";
+                navigator.geolocation.getCurrentPosition(
+                    function(position){
+                        let latitude =
+                        position.coords.latitude;
+                        let longitude =
+                        position.coords.longitude;
+                        output.innerHTML =
+                        "✅ Latitude: "
+                        + latitude
+                        +
+                        "<br>✅ Longitude: "
+                        + longitude;
+                    },
+                    function(error){
+                        switch(error.code){
+                            case error.PERMISSION_DENIED:
+                                output.innerHTML =
+                                "❌ Permission denied by user.";
+                                break;
+                            case error.TIMEOUT:
+                                output.innerHTML =
+                                "⏰ Request timed out.";
+                                break;
+                            default:
+                                output.innerHTML =
+                                "⚠️ Unable to fetch location.";
+                        }
+                    },
+                    {
+                        enableHighAccuracy: true,
+                        timeout: 10000,
+                        maximumAge: 0
+                    }
+                );
+            }
+            else{
+                output.innerHTML =
+                "❌ Geolocation is not supported.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event Gallery</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h1{
+            text-align: center;
+            color: #0077ff;
+        }
+
+        .galleryTable{
+            width: 100%;
+            text-align: center;
+            border-spacing: 20px;
+        }
+
+        .eventImage{
+            width: 250px;
+            height: 180px;
+            border: 4px solid #0077ff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px gray;
+            transition: transform 0.3s;
+        }
+
+        .eventImage:hover{
+            transform: scale(1.05);
+        }
+
+        .caption{
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        caption{
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: darkblue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>📸 Local Community Event Gallery</h1>
+
+    <table class="galleryTable">
+
+        <caption>
+            Memories from Previous Community Events
+        </caption>
+
+        <tr>
+
+            <td>
+                <img src="images/event1.jpeg"
+                     alt="Music Festival"
+                     title="Annual Music Festival"
+                     class="eventImage">
+
+                <p class="caption">🎵 Music Festival</p>
+            </td>
+
+            <td>
+                <img src="images/event2.jpeg"
+                     alt="Food Fair"
+                     title="Local Food Fair"
+                     class="eventImage">
+
+                <p class="caption">🍔 Food Fair</p>
+            </td>
+
+            <td>
+                <img src="images/event3.jpeg"
+                     alt="Art Workshop"
+                     title="Creative Art Workshop"
+                     class="eventImage">
+
+                <p class="caption">🎨 Art Workshop</p>
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                <img src="images/event4.jpeg"
+                     alt="Dance Show"
+                     title="Community Dance Show"
+                     class="eventImage">
+
+                <p class="caption">💃 Dance Show</p>
+            </td>
+
+            <td>
+                <img src="images/event5.jpeg"
+                     alt="Sports Event"
+                     title="Sports Competition"
+                     class="eventImage">
+
+                <p class="caption">⚽ Sports Event</p>
+            </td>
+
+            <td>
+                <img src="images/event6.jpeg"
+                     alt="Book Fair"
+                     title="Book Exhibition"
+                     class="eventImage">
+
+                <p class="caption">📚 Book Fair</p>
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
