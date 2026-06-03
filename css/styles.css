@@ -1,0 +1,266 @@
+body{
+    background-color: lightyellow;
+}
+h1{
+    color:red;
+    text-align:center;
+}
+body{
+    background-color: #f4f4f4;
+    font-family: Arial;
+}
+h1{
+    color: darkblue;
+    text-align: center;
+}
+.cta-button{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+*{
+    margin:0;
+    padding:0;
+}
+#mainHeader{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+h2{
+    color:darkblue;
+}
+.eventCard{
+    border:2px solid gray;
+    padding:20px;
+    margin:20px;
+    background-color:lightyellow;
+}
+h2,p{
+    font-family:Arial;
+}
+body{
+    background-color: rgba(0,0,0,0.1);
+    background-image: url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30");
+    background-size: cover;
+    font-family: Arial;
+}
+header{
+    background: linear-gradient(to right, blue, purple);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.eventSection{
+    background-color: #ffffff;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+h2{
+    color: #ff5733;
+}
+body{
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color: darkblue;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+h2{
+    color: crimson;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+p{
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    font-weight: bold;
+}
+.textSection{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+body{
+    font-family: Arial;
+    background-color: #f4f4f4;
+}
+header{
+    background-color: darkblue;
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    color: white;
+    margin-bottom: 15px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+    margin: 15px;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: yellow;
+}
+a:active{
+    color: red;
+}
+a:visited{
+    color: lightgray;
+}
+body{
+    font-family: Arial;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+table, th, td{
+    border: 1px solid black;
+}
+th, td{
+    padding: 15px;
+    text-align: center;
+}
+th{
+    background-color: darkblue;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #e6e6e6;
+}
+body{
+    font-family: Arial;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color: darkblue;
+}
+.eventCard{
+    background-color: white;
+    border: 3px solid gray;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+}
+input:focus{
+    outline: 3px solid blue;
+}
+.hiddenBox{
+    visibility: hidden;
+    background-color: yellow;
+    padding: 20px;
+    margin-top: 20px;
+}
+.removeBox{
+    display: none;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+body{
+    font-family: Arial;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+.newsSection{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 2px solid gray;
+    line-height: 1.8;
+    text-align: justify;
+}
+body{
+    font-family: Arial;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+header{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    display: inline;
+    margin: 15px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+@media screen and (max-width:768px){
+    li{
+        display: block;
+        margin: 10px;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        font-size: 24px;
+    }
+}
+body{
+    font-family: Arial;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+header{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
