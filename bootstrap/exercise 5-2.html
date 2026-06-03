@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5.2 - Column Reordering</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Section 5.2: Column Reordering</h2>
+        <p class="text-center text-muted">Watch how the boxes flip positions when you shrink the screen size!</p>
+        
+        <div class="row text-center text-white fw-bold">
+            
+            <div class="col-12 col-md-6 order-md-2 mb-3">
+                <div class="bg-primary p-5 rounded shadow">
+                    <h3>Box 1 (Text Description)</h3>
+                    <p>Mobile: I am at the TOP.<br>Desktop: I move to the RIGHT.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 order-md-1 mb-3">
+                <div class="bg-danger p-5 rounded shadow">
+                    <h3>Box 2 (Profile Image)</h3>
+                    <p>Mobile: I am at the BOTTOM.<br>Desktop: I move to the LEFT.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

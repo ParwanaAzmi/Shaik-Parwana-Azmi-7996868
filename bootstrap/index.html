@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Portfolio </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-success fw-bold" href="#">Master Project</a>
+            <div class="navbar-nav small flex-row gap-2">
+                <a class="nav-link text-white" href="#sec8">Forms</a>
+                <a class="nav-link text-white" href="#sec9">Buttons</a>
+                <a class="nav-link text-white" href="#sec10">Navs</a>
+                <a class="nav-link text-white" href="#sec11">Cards</a>
+                <a class="nav-link text-white" href="#sec13">Colors</a>
+                <a class="nav-link text-white" href="#sec15">Borders</a>
+                <a class="nav-link text-white" href="#sec18">JS</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5" style="max-width: 900px;">
+        
+        <section id="sec8" class="card p-4 mb-5 shadow-sm border-0">
+            <h3 class="text-primary border-bottom pb-2 mb-4">8</h3>
+            
+            <h5 class="text-secondary mb-3">Exercise 8.1</h5>
+            <form class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="name@example.com">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Username</label>
+                    <div class="input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Agree to terms and conditions</label>
+                    </div>
+                </div>
+            </form>
+
+            <h5 class="text-secondary mb-3">Exercise 8.2</h5>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-floating text form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+        </section>
+
+
+        <section id="sec9" class="card p-4 mb-5 shadow-sm border-0">
+            <h3 class="text-primary border-bottom pb-2 mb-4">9</h3>
+            
+            <h5 class="text-secondary mb-3">Exercise 9.1</h5>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-outline-warning">Outline Warning</button>
+                <button class="btn btn-outline-info">Outline Info</button>
+            </div>
+
+            <h5 class="text-secondary mb-3">Exercise 9.2</h5>
+            <div class="btn-group mb-3" role="group">
+                <button type="button" class="btn btn-dark">Left</button>
+                <button type="button" class="btn btn-dark">Middle</button>
+                <button type="button" class="btn btn-dark">Right</button>
+            </div>
+            <div>
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck1">Click to Toggle State</label>
+            </div>
+        </section>
+
+
+        <section id="sec10" class="card p-4 mb-5 shadow-sm border-0">
+            <h3 class="text-primary border-bottom pb-2 mb-4">10</h3>
+            
+            <h5 class="text-secondary mb-3">Exercise 10.1</h5>
+            <nav class="navbar navbar-light bg-light rounded border p-2 mb-4">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1 text-primary fw-bold">BrandLogo</span>
+                    <div class="d-flex gap-3 me-auto ms-3">
+                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link" href="#">Link</a>
+                    </div>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+            <h5 class="text-secondary mb-3">Exercise 10.2</h5>
+            <ul class="nav nav-tabs mb-3">
+                <li class="nav-item"><a class="nav-link active" href="#">Active Tab</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tab 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tab 3</a></li>
+            </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link active bg-success" href="#">Pill 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pill 2</a></li>
+            </ul>
+        </section>
+
+
+        <section id="sec11" class="card p-4 mb-5 shadow-sm border-0">
+            <h3 class="text-primary border-bottom pb-2 mb-4">11</h3>
+            
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5 class="text-secondary mb-3">Exercise 11.1</h5>
+                    <div class="card border shadow-sm">
+                        <div class="bg-secondary text-white text-center py-4 rounded-top">
+                            <span class="fs-1">👤</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Parwana</h5>
+                            <p class="card-text text-muted">Lead Systems Engineer & Full-Stack Developer.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Connect</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <h5 class="text-secondary mb-3">Exercise 11.2</h5>
+                    <div class="d-flex align-items-start border p-3 rounded bg-white">
+                        <div class="bg-primary text-white p-3 rounded me-3 fs-3">
+                            📝
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Media Header Left-Aligned</h5>
+                            <p class="mb-0 text-muted small">This paragraph block sits perfectly aligned directly to the right side of the main icon element placeholder.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="sec12" class="card p-4 mb-5 shadow-sm border-0">
+            <h3 class="text-primary border-bottom pb-2 mb-4">12</h3>
+            
+            <h5 class="text-secondary mb-2">Exercise 12.1</h5>
+            <div class="bg-dark text-white m-3 p-4 rounded">
+                This block cleanly demonstrates structural spacing using class rule <strong>m-3</strong> (outer spacing) and class rule <strong>p-4</strong> (inner layout buffer).
+            </div>
+
+            <h5 class="text-secondary mt-4 mb-3">Exercise 12.2</h5>
+            <div class="row text-center py-3">
+                <div class="col-md-6 mb-3">
+                    <div class="p-4 border rounded bg-white shadow-sm">
+                        <h4 class="fw-bold text-muted">Starter</h4>
+                        <h1 class="my-3 font-weight-bold">Rs19<span class="fs-6 text-muted">/mo</span></h1>
+                        <p class="py-2">Standard UI assets access included.</p>
+                        <button class="btn btn-outline-primary mt-2">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="p-4 border border-primary rounded bg-white shadow">
+                        <h4 class="fw-bold text-primary">Enterprise</h4>
+                        <h1 class="my-3 font-weight-bold">Rs49<span class="fs-6 text-muted">/mo</span></h1>
+                        <p class="py-2">Full component customization enabled.</p>
+                        <button class="btn btn-primary mt-2">Go Premium</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="sec13" class="card p-4 mb-5 shadow-sm border-0">
+            <h3 class="text-primary border-bottom pb-2 mb-4">13</h3>
+            
+            <h5 class="text-secondary mb-3">Exercise 13.1</h5>
+            <div class="row text-white text-center g-2 mb-4">
+                <div class="col-4"><div class="bg-primary p-3 rounded">bg-primary</div></div>
+                <div class="col-4"><div class="bg-warning text-dark p-3 rounded">bg-warning</div></div>
+                <div class="col-4"><div class="bg-danger p-3 rounded">bg-danger</div></div>
+            </div>
+
+            <h5 class="text-secondary mb-3">Exercise 13.2</h5>
+            <div class="bg-dark bg-gradient text-white p-4 rounded shadow-sm">
+                This item provides a clean background visual gradient layer built via <strong>bg-gradient bg-dark</strong> utility pairings.
+            </div>
+        </section>
+
+
+        <section id="sec14" class="card p-4 mb-5 shadow-sm border-0">
+            <h3 class="text-primary border-bottom pb-2 mb-4">14</h3>
+            
+            <h5 class="text-secondary mb-2">Exercise 14.1</h5>
+            <div class="alert alert-warning d-none d-md-block">
+                <strong>🖥️ Desktop Mode Visible:</strong> This alert container completely hides automatically inside smaller smartphone screen spaces!
+            </div>
+            <div class="alert alert-info d-block d-md-none">
+                <strong>📱 Mobile Mode Visible:</strong> This alert only populates on compact mobile screens!
+            </div>
+
+            <h5 class="text-secondary mt-3 mb-2">Exercise 14.2</h5>
+            <div class="row">
+                <div class="col-md-4 d-none d-sm-block bg-light border p-3 rounded mb-2">
+                    🛡️ <strong>Sidebar (Tablets & Up Only):</strong> I render safely here on tablets and desktop monitors.
+                </div>
+                <div class="col-md-8 bg-white border p-3 rounded mb-2">
+                    📄 <strong>Main Reading Body Content:</strong> Visible across all display devices globally.
+                </div>
+            </div>
+        </section>
+
+
+        <section id="sec15" class="card p-4 mb-5 shadow-sm border-0">
+            <h3 class="text-primary border-bottom pb-2 mb-4">15</h3>
+            
+            <div class="row align-items-center text-center">
+                <div class="col-md-6 mb-3">
+                    <h5 class="text-secondary mb-3">Exercise 15.1</h5>
+                    <div class="border border-primary border-3 rounded-circle d-inline-block bg-white text-primary p-4 fw-bold shadow-sm" style="width: 110px; height: 110px; line-height: 55px;">
+                        Circle
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <h5 class="text-secondary mb-3">Exercise 15.2</h5>
+                    <div class="card shadow-lg rounded-pill p-3 border-0 bg-success text-white fw-bold">
+                        Highly Visible Floating Pill Shape Component
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="sec16" class="card p-4 mb-5 shadow-sm border-0">
+            <h3 class="text-primary border-bottom pb-2 mb-4">16</h3>
+            
+            <h5 class="text-secondary mb-3">Exercise 16.2</h5>
+            <div class="position-relative d-inline-block p-2 bg-dark rounded text-white" style="width: 180px;">
+                📬 Messages Storage Box
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                </span>
+            </div>
+
+            <h5 class="text-secondary mt-4 mb-2">Exercise 16.1</h5>
+            <p class="text-muted small mb-0">Scroll to the very base screen border context limit to check out the permanently fixed baseline system footer row block item asset.</p>
+        </section>
+
+
+        <section id="sec17" class="card p-4 mb-5 shadow-sm border-0">
+            <h3 class="text-primary border-bottom pb-2 mb-4">17</h3>
+            <p class="text-muted small"><em>Note: Since we are running fully offline without external asset downloads, text characters are substituted to represent icon modules reliably here.</em></p>
+            
+            <h5 class="text-secondary mb-2">Exercise 17.1 & 17.2</h5>
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-dark btn-lg">💬</button>
+                <button class="btn btn-danger btn-lg">❤️</button>
+                <button class="btn btn-primary btn-lg">🔗</button>
+                <span class="text-muted ms-2">Clean interface buttons initialized without explicitly requiring inline wording.</span>
+            </div>
+        </section>
+
+
+        <section id="sec18" class="card p-4 mb-5 shadow-sm border-0">
+            <h3 class="text-primary border-bottom pb-2 mb-4">18</h3>
+            
+            <h5 class="text-secondary mb-3">Exercise 18.1</h5>
+            <button type="button" class="btn btn-primary shadow mb-4" data-bs-toggle="modal" data-bs-target="#masterModal">
+                Launch System Modal Popup
+            </button>
+
+            <h5 class="text-secondary mb-3">Exercise 18.2</h5>
+            <div class="accordion" id="masterAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                            Section Panel Component #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#masterAccordion">
+                        <div class="accordion-body text-muted">
+                            This drop panel element expands smoothly, driven directly by your local bundle scripts.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                            Section Panel Component #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#masterAccordion">
+                        <div class="accordion-body text-muted">
+                            Hidden securely beneath view spaces completely by default until manually triggered.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="sec19" class="card p-4 mb-5 shadow-sm border-0 bg-dark text-white">
+            <h3 class="text-success border-bottom pb-2 mb-3">19</h3>
+            <p class="mb-1 fw-bold text-warning">Exercise 19.1 & 19.2 </p>
+            <p class="small text-light mb-0">
+                To build customized styles via Sass variables, you configure an npm workspace environment, import base maps inside a local <code>_variables.scss</code> file to adjust structural values like <code>$primary: #198754;</code>, and leverage engine modules to recompile clean production distribution builds.
+            </p>
+        </section>
+
+    </div>
+
+    <div class="modal fade" id="masterModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">🎉 Interactive Script Verification</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-muted">
+                    Your local JavaScript files are communicating perfectly with your HTML structures. This completely verifies Section 18 targets!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="position-fixed bottom-0 start-0 w-100 bg-dark text-center text-white py-2 small z-3 border-top border-secondary">
+        🏁 Section 16.1 Fixed Base Sticky Footer Bar Active.
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
